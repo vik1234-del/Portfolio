@@ -150,3 +150,36 @@ img {
   height: 50px; /* Adjust the size as per your requirement */
   border-radius: 50%;
 }
+
+@media only screen and (max-width: 768px) {
+  /* General adjustments */
+  body {
+    font-size: 16px; /* Decrease base font size */
+  }
+
+  /* Header */
+  .header {
+    padding: 20px; /* Reduce header padding */
+    text-align: center; /* Align text center for smaller screens */
+  }
+
+  /* Main content */
+  .main {
+    display: flex; /* Consider switching layout to single column for better readability */
+    flex-direction: column;
+  }
+
+  /* Project container */
+  .project-container {
+    margin: 0; /* Remove vertical margin */
+    flex-wrap: wrap; /* Ensure projects wrap for smaller screens */
+  }
+
+  /* Project articles */
+  .project-container article {
+    width: calc(50% - 10px); /* Set dynamic width based on viewport */
+    margin: 5px; /* Adjust margin for spacing on smaller screens */
+  }
+
+  /* Other section adjustments as needed */
+}
